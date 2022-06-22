@@ -20,4 +20,4 @@ If you are looking for my Roblox Profile, You may find it by searching the usern
 
 # Releases 
 
-- [Test]https://github.com/git-oykko/betterDS/releases/tag/v0.0.1
+- [v0.0.1](https://github.com/git-oykko/betterDS/releases/tag/v0.0.1)
