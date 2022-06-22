@@ -1,12 +1,6 @@
 # betterDS
 A simple and useful datastore module for Roblox.
 
-# Changelogs (0.0.1)
-- Created a git-repository
-
-# Releases (0.0.1)
-A
-# About
 It is an datastore module for which already protects your requests and restricts them if roblox is down.
 
 This isn't really meant to be a project since it can be easily created. It just uses the default datastore functions and
@@ -18,3 +12,9 @@ Since, it just makes your code look clean and uses the default datastore. Unless
 This probably won't be released. Although, I think I will make this site public however this would be treated as a side project. 
 
 If you are looking for my Roblox Profile, You may find it by searching the username "OykkoIsBack" or using the UserId which goes by 2706616065.
+
+# Changelogs (0.0.1)
+- Created a git-repository
+
+# Releases (0.0.1)
+A
