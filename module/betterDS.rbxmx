@@ -1,0 +1,68 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="ModuleScript" referent="RBXB76A9CA1AF0942C18641213F1CC02540">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">betterDS</string>
+			<string name="ScriptGuid">{3F830504-CC40-459B-9038-2FB75889491A}</string>
+			<ProtectedString name="Source"><![CDATA[-- Created by OykkoIsBack
+-- betterDS
+local data = {}
+local ds = game:GetService("DataStoreService"):GetDataStore("")
+
+function data.setData(plr, newValues)
+	local tries = 0
+	plr = tostring(plr)
+	plr = game.Players[plr]
+	repeat
+		tries += 1
+		
+		sucess = pcall(function()
+			ds:SetAsync(plr.UserId, newValues)
+		end)
+		if not sucess then
+			warn("Retrying")
+			task.wait(6.5)
+		end
+	until tries == 5 or sucess
+	
+	if not sucess then
+		game.Players[plr]:Kick("Roblox's data servers are unavailiable")
+		warn("Unable to load data for"..plr)
+	end
+end
+
+function data.getData(plr)
+	local tries = 0
+	plr = tostring(plr)
+	plr = game.Players[plr]
+	repeat
+		tries += 1
+		
+		sucess = pcall(function()
+			info = ds:GetAsync(plr.UserId)
+		end)
+		if not sucess then
+			warn("Retrying")
+			task.wait(6.5)
+		end
+	until tries == 5 or sucess
+	
+	if not sucess then
+		game.Players[plr]:Kick("Roblox's data servers are unavailiable")
+		warn("Unable to load data for "..plr)
+	end
+	
+	return info
+end
+
+return data
+]]></ProtectedString>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+	</Item>
+</roblox>
