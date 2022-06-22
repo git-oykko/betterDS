@@ -20,5 +20,4 @@ If you are looking for my Roblox Profile, You may find it by searching the usern
 
 # Releases 
 
-  ## 0.0.1
-  [betterDS-release-0.0.1.zip](https://github.com/git-oykko/betterDS/files/8959984/betterDS-release-0.0.1.zip)
+- betterDS 0.0.1 [betterDS-release-0.0.1.zip](https://github.com/git-oykko/betterDS/files/8959984/betterDS-release-0.0.1.zip)
